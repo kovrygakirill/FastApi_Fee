@@ -1,0 +1,12 @@
+How run through docker compose(Briefly):
+1. clone project
+2. create file .env and add to:
+    FAST_DB_USER=***
+    FAST_DB_PASS=***
+    FAST_DB_HOST=db
+    FAST_DB_NAME=***
+    FAST_DB_PORT=5432
+    FAST_CACHE_HOST=cache
+3. run container PostgreSQL and create user with password, create DB and execute this
+command 'CREATE EXTENSION IF NOT EXISTS "uuid-ossp";'.
+4. now you can run docker-compose(command: sudo docker-compose up --build)
